@@ -1,0 +1,9 @@
+<p class="title">
+  Lista de Recetas!
+</p>
+<button mat-raised-button color="primary" (click)="goToNewRecipie()">Create new Recipie</button>
+<gl-table
+  [data]="tableDataObs | async"
+  [dataStructure]="tableDataStructureObs | async"
+  (element)="goToDetail($event)">
+</gl-table>
